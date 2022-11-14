@@ -3,95 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <title>Filippov CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="Avatar_600x800.jpg" width="300" alt="Avatar" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="Avatar_600x800.jpg" alt="Avatar" class="avatar" />
+
+        <div class="info-text">
           <h1>Artemii Filippov</h1>
-          <p>
-            <em> I`m studying <strong>web development.</strong> </em>
-          </p>
+          <p>I`m studying <strong>web development.</strong></p>
           <p>I like watching old movies and programming.</p>
-        </td>
-      </tr>
-    </table>
 
-    <hr />
+          <h4>My social networks</h4>
 
-    <h2>My social networks</h2>
-    <ul type="circle">
-      <li><a href="https://t.me/artfeel92" target="_blank"> Telegram</a></li>
-      <li>
-        <a href="https://www.facebook.com/artfeel92/" target="_blank"
-          >Facebook</a
-        >
-      </li>
-    </ul>
+          <a href="https://t.me/artfeel92" target="_blank"> Telegram</a>
+          |
+          <a href="https://www.facebook.com/artfeel92/" target="_blank"
+            >Facebook</a
+          >
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>My hobbies</h2>
+        <ol class="list">
+          <li>Bouldering</li>
+          <li>Hiking</li>
+          <li>Programming</li>
+        </ol>
+      </div>
 
-    <h2>My hobbies</h2>
-    <ol>
-      <li>Bouldering</li>
-      <li>Hiking</li>
-      <li>Programming</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Work experience</h2>
+        <table class="table">
+          <tr>
+            <td>CDEK</td>
+            <td>Manager</td>
+            <td>2017 - 2019</td>
+          </tr>
+          <tr>
+            <td>ClientLab</td>
+            <td>Account manager</td>
+            <td>2020 - 2021</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
+      <div class="card bg-red">
+        <h2>YouTube</h2>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=0ue4Z3W0x60&ab_channel=Front-endScience%D1%96%D0%B7%D0%A1%D0%B5%D1%80%D0%B3%D1%96%D1%94%D0%BC%D0%9F%D1%83%D0%B7%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D0%B8%D0%BC"
+              target="_blank"
+              >Link to pet project</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=oluY633rkgI&ab_channel=WebDevSimplified"
+              target="_blank"
+              >5 Projects You Can Build In A Week That Will Get You Hired
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <h2>Work experience</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Company</th>
-          <th>Job title</th>
-          <th>Year</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>CDEK</td>
-          <td>Manager</td>
-          <td>2017 - 2019</td>
-        </tr>
-        <tr>
-          <td>ClientLab</td>
-          <td>Account manager</td>
-          <td>2020 - 2021</td>
-        </tr>
-      </tbody>
-    </table>
+      <div class="contact">
+        <h2>Contact with me</h2>
 
-    <hr />
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Your name:</label>
+              <input type="text" id="name" placeholder="Enter your name..." />
+            </div>
 
-    <h2>YouTube</h2>
-    <a href="pet-project.html">My pet projects</a>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" placeholder="Enter email..." />
+            </div>
+          </div>
 
-    <hr />
+          <div class="form-group">
+            <label for="text">Your message:</label>
+            <textarea id="text" cols="15" rows="2"></textarea>
+          </div>
 
-    <h2>Contact with me</h2>
-
-    <form action="/">
-      <label for="name">Your name:</label>
-      <input type="text" id="name" placeholder="Enter your name..." />
-
-      <br />
-
-      <label for="email">Your Email:</label>
-      <input type="email" id="email" placeholder="Enter email..." />
-
-      <br />
-
-      <label for="text">Your message:</label>
-      <textarea id="text" cols="15" rows="2"></textarea>
-
-      <br />
-
-      <input type="submit" value="Send!" />
-    </form>
+          <input class="btn" type="submit" value="Send!" />
+        </form>
+      </div>
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
   </body>
 </html>
